@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="./vite.svg" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<title>Febri's Portofolio</title>
+	</head>
+	<body>
+		<nav
+			data-basebg-color="rgba(0,0,0,0)"
+			data-basefg-color="rgb(255,255,255)">
+			<span class="caligraphy">Febri</span>
+			<div class="navLeft">
+				<span>Introduction</span>
+				<span>Projects</span>
+				<span>Contact</span>
+			</div>
+		</nav>
+
+		<main id="main">
+			<div id="slidersProgress"></div>
+
+			<div
+				class="leftRightContainer mainSlider"
+				id="introduction">
+				<div class="lrContainer">
+					<div></div>
+					<div>
+						<h1>Febri Bayu Nurcahyo.</h1>
+						<p class="hideScroll">
+							I was born in 25 February 2005 at Gunungkidul, DI Yogyakarta. I'm currently studying
+							at SMKN 2 Wonosari majoring in Computer and Network Engineering. From 2020 i started
+							to learn programming. My first programming language was C++ but it's hard to get
+							started on building apps with C++. Because of that i started learning about Web
+							Development. Since then i've learned alot of thing such as HTML, CSS, Javascript,
+							Nodejs, PHP, React, Flutter, Vue, etc. Now i'am focusing on Front-End Web Development.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div
+				id="skill"
+				class="mainSlider leftRightContainer"
+				style="background-color: white; color: black"
+				color="white">
+				<div class="lrContainer">
+					<div>
+						<canvas
+							id="spinningBrain"
+							style="background: transparent"></canvas>
+					</div>
+					<div id="projectList">
+						<h1>Projects</h1>
+						<div>
+							<a href="https://febri-i.github.io/cute-cat-fact/"><h2>Cute Cat Fact</h2></a>
+							<a href="https://febri-i.github.io/Quran-App/"><h2>Quran WebApp</h2></a>
+							<a href="https://github.com/Febri-i/fractal-tree"><h2>Fractal Tree</h2></a>
+							<a href="https://febri-i.github.io/cigarette-site/"><h2>Cigarette Site</h2></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div
+				id="contact"
+				class="mainSlider"
+				style="background-color: black; color: white">
+				<div class="bussinessCardPaper">
+					<div class="top">
+						<span>087722147115</span>
+						<span>Web Development</span>
+					</div>
+					<div class="middle">
+						<span>Febri Bayu Nurcahyo</span>
+						<span>Front End Dev</span>
+					</div>
+					<div class="bottom">
+						<span>Semanu Selatan, Semanu, Semanu, Gunungkidul, D.I Yogyakarta.</span>
+						<span>Github febri-i. Email febribayun@gmail.com.</span>
+					</div>
+				</div>
+			</div>
+		</main>
+		<div
+			id="hireMe"
+			data-deg-range="180"
+			class="circleButton">
+			<span class="circleText">Hire me!</span>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="32"
+				height="32"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="circleButtonIcon">
+				<line
+					x1="7"
+					y1="17"
+					x2="17"
+					y2="7"></line>
+				<polyline points="7 7 17 7 17 17"></polyline>
+			</svg>
+		</div>
+	</body>
+	<script
+		type="module"
+		src="./main.js"></script>
+</html>

@@ -1,0 +1,558 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	transition: color var(--duration-fast), background-color var(--duration-normal);
+}
+
+:root {
+	--white: #edf1ff;
+	--black: rgba(0, 0, 0, 0);
+	--grey: rgba(255, 255, 255, 0.26);
+	--accent: #ff1d58;
+
+	--duration-fast: 0.1s;
+	--duration-normal: 0.3s;
+	--duration-slow: 0.5s;
+}
+
+@font-face {
+	font-family: Inter;
+	src: url(./public/fonts/Inter/Inter-Black.ttf);
+	font-weight: 900;
+}
+@font-face {
+	font-family: Inter;
+	src: url(./public/fonts/Inter/Inter-Bold.ttf);
+	font-weight: 700;
+}
+@font-face {
+	font-family: Inter;
+	src: url(./public/fonts/Inter/Inter-ExtraBold.ttf);
+	font-weight: 800;
+}
+@font-face {
+	font-family: Inter;
+	src: url(./public/fonts/Inter/Inter-ExtraLight.ttf);
+	font-weight: 200;
+}
+@font-face {
+	font-family: Inter;
+	src: url(./public/fonts/Inter/Inter-Light.ttf);
+	font-weight: 300;
+}
+@font-face {
+	font-family: Inter;
+	src: url(./public/fonts/Inter/Inter-Medium.ttf);
+	font-weight: 500;
+}
+@font-face {
+	font-family: Inter;
+	src: url(./public/fonts/Inter/Inter-Regular.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: Inter;
+	src: url(./public/fonts/Inter/Inter-SemiBold.ttf);
+	font-weight: 600;
+}
+@font-face {
+	font-family: Inter;
+	src: url(./public/fonts/Inter/Inter-Thin.ttf);
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: Montserrat;
+	src: url(./public/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+
+@font-face {
+	font-family: MissFajardose;
+	src: url(./public/fonts/Miss_Fajardose/MissFajardose-Regular.ttf);
+}
+@font-face {
+	font-family: AbrilFatFace;
+	src: url(./public/fonts/AbrilFatface-Regular.ttf);
+}
+
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-Black.ttf);
+	font-weight: 900;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-BlackItalic.ttf);
+	font-weight: 900;
+	font-style: italic;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-Bold.ttf);
+	font-weight: 700;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-BoldItalic.ttf);
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-ExtraBold.ttf);
+	font-weight: 800;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-ExtraBoldItalic.ttf);
+	font-weight: 800;
+	font-style: italic;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-ExtraLight.ttf);
+	font-weight: 200;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-ExtraLightItalic.ttf);
+	font-weight: 200;
+	font-style: italic;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-Italic.ttf);
+	font-style: italic;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-Light.ttf);
+	font-weight: 300;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-LightItalic.ttf);
+	font-weight: 300;
+	font-style: italic;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-Medium.ttf);
+	font-weight: 500;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-MediumItalic.ttf);
+	font-weight: 500;
+	font-style: italic;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-Regular.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-SemiBold.ttf);
+	font-weight: 600;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-SemiBoldItalic.ttf);
+	font-weight: 600;
+	font-style: italic;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-Thin.ttf);
+	font-weight: 100;
+}
+@font-face {
+	font-family: Poppins;
+	src: url(./public/fonts/poppins/Poppins-ThinItalic.ttf);
+	font-weight: 100;
+	font-style: italic;
+}
+
+body {
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	overflow: hidden;
+	grid-template-rows: 50px auto;
+	color: var(--white);
+}
+
+main {
+	display: block;
+	width: 100%;
+	padding: 80px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	min-height: 0;
+}
+
+#canvasbg {
+	position: absolute;
+	/* width: 100%; */
+	bottom: 0;
+	right: 0;
+	/* height: 100%; */
+	left: 0;
+	top: 0;
+	background: transparent;
+	/* background-color: var(--black); */
+}
+
+.mainSlider::before {
+	height: 80px;
+	top: -40px;
+	content: "";
+	position: absolute;
+	width: 100%;
+	background-color: inherit;
+}
+
+.mainSlider {
+	position: absolute;
+	height: calc(100%);
+	top: 40px;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	transform: translateY(100%);
+}
+
+p {
+	font-family: Poppins;
+	text-align: justify;
+	text-justify: auto;
+}
+
+h1 {
+	font-family: AbrilFatFace;
+}
+
+h2 {
+	font-family: Montserrat;
+}
+
+body > nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0px 40px;
+	width: 100%;
+	position: fixed;
+	background: transparent;
+	/* background-color: var(--black); */
+	color: var(--white);
+	z-index: 20;
+}
+
+.hideScroll {
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	overflow: -moz-scrollbar-none;
+	scrollbar-width: none; /* Firefox */
+}
+
+.hideScroll::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
+}
+
+body > nav .caligraphy {
+	font-family: MissFajardose;
+	font-size: 40px;
+	/* color: white; */
+	scale: 2;
+	pointer-events: none;
+	position: relative;
+	z-index: 1;
+	/* mix-blend-mode: difference; */
+	transform-origin: top left;
+}
+
+.navLeft span {
+	font-family: Montserrat;
+	cursor: pointer;
+	position: relative;
+}
+
+.navLeft span::before {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -2px;
+	height: 1px;
+	transform: scale(0, 1);
+	background-color: var(--white);
+	transition: var(--duration-normal) ease-out;
+}
+
+.navLeft span:hover:before {
+	transform: scale(1, 1);
+}
+
+.navLeft {
+	display: flex;
+	gap: 2rem;
+}
+
+.leftRightContainer {
+	display: flex;
+	align-items: center;
+	padding: 50px;
+	justify-content: center;
+}
+
+.lrContainer {
+	width: 80%;
+	overflow: hidden;
+	/* padding: 20px 0; */
+	height: 100%;
+	display: grid;
+	gap: 100px;
+	grid-template-columns: 6fr 4fr;
+}
+
+#skill {
+}
+
+#introduction {
+	background-color: white;
+	color: black;
+}
+
+#introduction h1 {
+	font-weight: normal;
+	font-size: 3.5rem;
+}
+
+#introduction .lrContainer > div:first-child {
+	background-color: black;
+	min-height: 0;
+	width: 100%;
+	height: 100%;
+	/* aspect-ratio: 4/6; */
+	/* width: auto; */
+}
+
+#introduction .lrContainer > div:last-child {
+	width: 100%;
+	min-width: 40vw;
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+#introduction > div:last-child p {
+	height: 100%;
+	overflow-y: auto;
+	box-sizing: content-box;
+}
+
+.circleButton {
+	position: fixed;
+	display: flex;
+	cursor: pointer;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.circleButton svg {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 100%;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	background-color: inherit;
+	height: 100%;
+}
+
+.circleText {
+	position: absolute;
+	font-family: monospace;
+	font-weight: bold;
+	left: 0px !important;
+	right: 0px !important;
+	bottom: 0px !important;
+	top: 0px !important;
+	z-index: 0;
+	border-radius: 50%;
+	transform: rotate(0deg);
+	animation-fill-mode: forwards;
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-name: rotateEm;
+	animation-play-state: paused;
+}
+
+.circleButton:hover .circleText {
+	animation-play-state: running;
+}
+
+.circleButtonIcon {
+	z-index: 3;
+}
+
+@keyframes rotateEm {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.circleButton .circleLetter {
+	position: absolute;
+	font-size: 30px;
+	color: var(--white);
+	height: calc(50% + 30px);
+	transition: 0.3s;
+	max-height: 0px;
+	display: inline-block;
+	transform-origin: bottom center;
+	z-index: 2;
+}
+
+.circleButton:hover .circleLetter {
+	max-height: 100%;
+}
+
+@keyframes arrowGo {
+	0% {
+		transform: translate(-100%, 100%);
+	}
+	100% {
+		transform: translate(100%, -100%);
+	}
+}
+
+@keyframes arrowCome {
+	from {
+		transform: translate(-100%, 100%);
+	}
+	to {
+		transform: translate(0, 0);
+	}
+}
+
+#hireMe svg > * {
+	animation-name: arrowCome;
+	animation-duration: var(--duration-slow);
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+#hireMe:hover svg > * {
+	animation-iteration-count: infinite;
+	animation-name: arrowGo;
+}
+
+#hireMe {
+	background-color: var(--accent);
+	position: fixed;
+	left: 40px;
+	bottom: 40px;
+}
+
+#slidersProgress {
+	position: fixed;
+	right: 25px;
+	height: 250px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 5px;
+	display: flex;
+	gap: 5px;
+	flex-direction: column;
+	z-index: 10;
+}
+
+.sliderProgress {
+	background-color: var(--grey);
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 2.5px;
+}
+
+.sliderProgressValue {
+	background-color: var(--white);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+#spinningBrain {
+	width: 100%;
+	height: 100%;
+}
+
+#projectList a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#projectList h2 {
+	border-bottom: 2px solid black;
+	padding-top: 10px;
+}
+
+#contact {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bussinessCardPaper {
+	font-family: Montserrat;
+	background-color: #f9f6ee;
+	color: black;
+	font-weight: 600;
+	width: 700px;
+	height: 400px;
+	padding: 25px;
+	display: block;
+
+	text-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4), 1px -1px 0 rgba(255, 255, 255, 1);
+	display: flex;
+	flex-direction: column;
+	/* grid-column: min-auto auto 1fr; */
+}
+
+.bussinessCardPaper .top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.bussinessCardPaper .middle {
+	justify-content: center;
+	height: 100%;
+	font-size: 20px;
+}
+
+.bussinessCardPaper .bottom,
+.bussinessCardPaper .middle {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
